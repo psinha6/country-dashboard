@@ -1,0 +1,87 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flag-image {
+  width: 40px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.error-message {
+  color: red;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.table-container {
+  padding: 20px;
+  position: relative;
+}
+
+table {
+  width: 100%;
+}
+
+.flag-img {
+  width: 40px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clickable-row:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.mat-mdc-row .mat-mdc-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  border-color: currentColor;
+}
+
+.mat-column-flag {
+  width: 60px;
+}
+
+.mat-column-name {
+  width: 150px;
+}
+
+.mat-column-capital {
+  width: 120px;
+}
+
+.mat-column-region {
+  width: 120px;
+}
+
+.mat-column-population {
+  width: 120px;
+  text-align: right;
+}
+
+.mat-column-languages {
+  width: 200px;
+}
+
+.mat-column-currencies {
+  width: 200px;
+} 
