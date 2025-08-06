@@ -24,7 +24,7 @@ export const CountryStore = signalStore(
     loadCountries: rxMethod<void>(
       pipe(
         tap(() => patchState(store, { loading: true, error: null })),
-        switchMap(() => http.get<Country[]>('https://restcountries.com/v3.1/all')),
+        switchMap(() => http.get<Country[]>('https://restcountries.com/v3.1/all?fields=name,capital,region,subregion,population,flags,languages,currencies,cca3')),
         tap({
           next: (countries) => patchState(store, { countries, loading: false }),
           error: (error) => patchState(store, { error: error.message, loading: false }),
